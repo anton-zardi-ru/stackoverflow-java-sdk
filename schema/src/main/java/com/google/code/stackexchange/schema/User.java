@@ -244,7 +244,14 @@ public class User extends SchemaEntity {
 		MOST_VOTED("votes", Order.DESCENDING),
 
 		/** The LEAS t_ voted. */
-		LEAST_VOTED("votes", Order.ASCENDING);
+		LEAST_VOTED("votes", Order.ASCENDING),
+
+		/** The MOST recently last activity . */
+		MOST_ACTIVITY("activity", Order.DESCENDING),
+
+		/** The LEAST recently last activity . */
+		LEAST_ACTIVITY("activity", Order.ASCENDING),
+		;
 
 		/** The Constant stringToEnum. */
 		private static final Map<String, QuestionSortOrder> stringToEnum = new HashMap<String, QuestionSortOrder>();
